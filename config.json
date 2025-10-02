@@ -1,0 +1,46 @@
+{
+    "monitoring": {
+        "enabled": true,
+        "scan_interval": 1,
+        "directories": [
+            "C:\\Users\\%USERNAME%\\Documents",
+            "C:\\Users\\%USERNAME%\\Desktop",
+            "C:\\Users\\%USERNAME%\\Pictures"
+        ],
+        "exclusions": [
+            "C:\\Program Files\\",
+            "C:\\Windows\\",
+            "C:\\ProgramData\\"
+        ]
+    },
+    "detection": {
+        "sensitivity": "medium",
+        "behavioral_analysis": true,
+        "signature_detection": true,
+        "honeypots": true,
+        "thresholds": {
+            "mass_file_activity": 20,
+            "high_cpu_usage": 80,
+            "high_memory_usage": 100
+        }
+    },
+    "protection": {
+        "auto_quarantine": true,
+        "emergency_mode_threshold": 80,
+        "block_suspicious_network": true,
+        "protect_critical_files": true,
+        "terminate_suspicious_processes": true
+    },
+    "logging": {
+        "level": "INFO",
+        "max_file_size": "10MB",
+        "max_files": 5,
+        "console_output": true
+    },
+    "gui": {
+        "theme": "default",
+        "language": "pt_BR",
+        "auto_start": true,
+        "minimize_to_tray": true
+    }
+}
